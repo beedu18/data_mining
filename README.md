@@ -14,6 +14,6 @@ Matplotlib: 3.0.x
 * Apriori (Association Rule Mininig)
 * Naive Bayesian Classifier (Classifiaction)
 
-All of these are assorted in the [Algos.py]() file
+All of these are assorted in the [Algos.py](https://github.com/beedu18/data_mining/blob/master/Algos.py) file
 
-A test code comparing k-means and dbscan is written in the [driver.py]() file
+A test code comparing k-means and dbscan is written in the [driver.py](https://github.com/beedu18/data_mining/blob/master/driver.py) file
