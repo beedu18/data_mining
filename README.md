@@ -18,9 +18,13 @@ All of these are assorted in the [Algos.py](https://github.com/beedu18/data_mini
 
 A test code comparing k-means and dbscan is written in the [driver.py](https://github.com/beedu18/data_mining/blob/master/driver.py) file
 
+## K-Means output
+
 ![text1][img1]
 
 [img1]: ./kmeans.PNG "K-Means tends to form spherical clusters"
+
+## DBSCAN output
 
 ![text2][img2]
 
