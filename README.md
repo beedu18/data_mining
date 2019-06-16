@@ -22,10 +22,10 @@ A test code comparing k-means and dbscan is written in the [driver.py](https://g
 
 ![text1][img1]
 
-[img1]: ./kmeans.PNG "K-Means tends to form spherical clusters"
+[img1]: ./img/kmeans.PNG "K-Means tends to form spherical clusters"
 
 ## DBSCAN output
 
 ![text2][img2]
 
-[img2]: ./dbscan.PNG "DBSCAN forms clusters based on density of the region"
+[img2]: ./img/dbscan.PNG "DBSCAN forms clusters based on density of the region"
