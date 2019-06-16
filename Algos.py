@@ -19,7 +19,7 @@ def findMean(cluster):  #finds the mean of a given cluster
     return final
 
 def findMedoid(cluster,mean):    #finds the medoid of a given cluster
-    medoid=None
+    medoid=cluster[0]
     Min=dist(mean,cluster[0])
     for i in range(len(cluster)):
         if dist(mean,cluster[i])<Min:
