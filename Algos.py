@@ -143,21 +143,21 @@ class dbscan:       #CLUSTERING
 
     def classify(self):   #classifies each point in the dataset (modifies the new property added above)
         for pt in self.dataset:
-            if pt[2]!=None:
+            if pt[-1]!=None:
                 continue
             neighbors=self.nbhd(pt)
             if neighbors[0]<self.minpts:
-                pt[2]='Noise'
+                pt[-1]='Noise'
                 continue
             self.C+=1
-            pt[2]=self.C
+            pt[-1]=self.C
             seed=self.nbhd(pt)[1]
             for q in seed:
-                if q[2]=='Noise':
-                    q[2]=self.C
-                if q[2]!=None:
+                if q[-1]=='Noise':
+                    q[-1]=self.C
+                if q[-1]!=None:
                     continue
-                q[2]=self.C 
+                q[-1]=self.C 
                 temp_nbh=self.nbhd(q)
                 if temp_nbh[0]>=self.minpts:
                     for pt_ in temp_nbh[1]:
@@ -166,11 +166,11 @@ class dbscan:       #CLUSTERING
 
     def plot(self):     #for plotting the points
         for pt in self.dataset:
-            if pt[2] not in self.clusters:
-                self.clusters[pt[2]]=[]     #clusters initialized as empty lists
+            if pt[-1] not in self.clusters:
+                self.clusters[pt[-1]]=[]     #clusters initialized as empty lists
 
         for pt in self.dataset:
-            self.clusters[pt[2]].append(pt)   #points added to respective clusters
+            self.clusters[pt[-1]].append(pt)   #points added to respective clusters
 
         for k,v in self.clusters.items():
             if k=='Noise':
